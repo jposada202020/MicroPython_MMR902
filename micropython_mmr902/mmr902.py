@@ -14,22 +14,16 @@ MicroPython Driver fro the Mitsumi MMR902 Micro Pressure Sensor
 """
 import time
 from micropython import const
-from micropython_mmr902.i2c_helpers import CBits, RegisterStruct
-
-try:
-    from typing import Tuple
-except ImportError:
-    pass
 
 
 __version__ = "0.0.0+auto.0"
 __repo__ = "https://github.com/jposada202020/MicroPython_MMR902.git"
 
 
-MODE1 = const(0XA0)
-MODE2 = const(0XA2)
-MODE3 = const(0XA4)
-MODE4 = const(0XA6)
+MODE1 = const(0xA0)
+MODE2 = const(0xA2)
+MODE3 = const(0xA4)
+MODE4 = const(0xA6)
 operation_mode_values = (MODE1, MODE2, MODE3, MODE4)
 _temp_waiting_values = {MODE1: 0.034, MODE2: 0.021, MODE3: 0.014, MODE4: 0.439}
 _press_waiting_values = {MODE1: 0.016, MODE2: 0.08, MODE3: 0.004, MODE4: 0.256}
@@ -122,7 +116,7 @@ class MMR902:
         | :py:const:`mmr902.MODE4` | :py:const:`0XA6` |
         +--------------------------+------------------+
         """
-        values = {MODE1: "MODE1", MODE2: "MODE2", MODE3:"MODE3", MODE4:"MODE4"}
+        values = {MODE1: "MODE1", MODE2: "MODE2", MODE3: "MODE3", MODE4: "MODE4"}
         return values[self._command]
 
     @operation_mode.setter

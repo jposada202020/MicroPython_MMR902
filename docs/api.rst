@@ -2,8 +2,8 @@ MicroPython MMR920 Library
 =====================================================================
 
 
-.. automodule:: micropython_mmr920
+.. automodule:: micropython_mmr902
     :members:
 
-.. automodule:: micropython_mmr920.mmr920
+.. automodule:: micropython_mmr902.mmr902
     :members:

@@ -3,8 +3,8 @@ Simple test
 
 Ensure your device works with this simple test.
 
-.. literalinclude:: ../examples/mmr920_simpletest.py
-    :caption: examples/mmr920_simpletest.py
+.. literalinclude:: ../examples/mmr902_simpletest.py
+    :caption: examples/mmr902_simpletest.py
     :lines: 5-
 
 Operation mode settings
