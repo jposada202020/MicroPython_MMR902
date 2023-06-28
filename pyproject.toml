@@ -10,22 +10,22 @@ requires = [
 ]
 
 [project]
-name = "micropython-mmr920"
-description = "MicroPython Driver fro the Mitsumi MMR920 Micro Pressure Sensor"
+name = "micropython-mmr902"
+description = "MicroPython Driver fro the Mitsumi MMR902 Micro Pressure Sensor"
 version = "0.0.0+auto.0"
 readme = "README.rst"
 authors = [
     {name = "JDM", email = "xxyx@mailmeto.mozmail.com"}
 ]
-urls = {Homepage = "https://github.com/jposada202020/MicroPython_MMR920"}
+urls = {Homepage = "https://github.com/jposada202020/MicroPython_MMR902"}
 keywords = [
     "sensor",
     "micropython",
-    "mmr920",
+    "mmr902",
     "pressure",
     "micropython",
     "mitsumi",
-    "mmr920",
+    "mmr902",
     "driver",
     "sensor",
 ]
@@ -41,7 +41,7 @@ classifiers = [
 dynamic = ["dependencies", "optional-dependencies"]
 
 [tool.setuptools]
-packages = ["micropython_mmr920"]
+packages = ["micropython_mmr902"]
 
 [tool.setuptools.dynamic]
 dependencies = {file = ["requirements.txt"]}
