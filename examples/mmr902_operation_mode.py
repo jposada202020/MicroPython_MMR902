@@ -16,7 +16,7 @@ while True:
         print("Current Operation mode setting: ", mmr.operation_mode)
         for _ in range(10):
             press = mmr.pressure
-            print("Temperature: {:.2f}mmHg".format(press))
+            print(f"Pressure: {mmr.pressure}mmHg")
             print()
             time.sleep(0.5)
         mmr.operation_mode = operation_mode

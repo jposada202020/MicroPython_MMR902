@@ -52,11 +52,13 @@ class MMR902:
     .. code-block:: python
 
         i2c = I2C(1, sda=Pin(2), scl=Pin(3))
-        mmr902 = mmr902.MMR902(i2c)
+        mmr = mmr902.MMR902(i2c)
 
     Now you have access to the attributes
 
     .. code-block:: python
+
+        temp = mmr.temperature
 
     """
 
@@ -78,7 +80,7 @@ class MMR902:
         self._i2c.readfrom_into(self._address, data)
         result = data[0] << 16 | data[1] << 8 | data[2]
 
-        return self._twos_comp(result, 24) / 1000
+        return self._twos_comp(result, 24) / 1000.0
 
     @property
     def temperature(self) -> float:

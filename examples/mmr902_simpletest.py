@@ -10,7 +10,7 @@ i2c = I2C(1, sda=Pin(2), scl=Pin(3))  # Correct I2C pins for RP2040
 mmr = mmr902.MMR902(i2c)
 
 while True:
-    print("Pressure: {}mmHg".format(mmr.pressure))
-    print("Temperature: {}C".format(mmr.temperature))
+    print(f"Pressure: {mmr.pressure}mmHg")
+    print(f"Temperature: {mmr.temperature}°C")
     print()
     time.sleep(0.5)

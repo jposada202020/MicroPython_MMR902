@@ -20,14 +20,11 @@ authors = [
 urls = {Homepage = "https://github.com/jposada202020/MicroPython_MMR902"}
 keywords = [
     "sensor",
-    "micropython",
     "mmr902",
     "pressure",
     "micropython",
     "mitsumi",
-    "mmr902",
     "driver",
-    "sensor",
 ]
 license = {text = "MIT"}
 classifiers = [
